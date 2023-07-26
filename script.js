@@ -10,7 +10,7 @@ let Buttons = document.querySelectorAll('.buttons-div button');
 
 let imageContainner = document.querySelectorAll('.image-containner div')
 
-let Menpic = document.querySelectorAll('.men-pic svg g')
+let Menpic = document.querySelectorAll('svg g')
 
 let MenContainner = document.querySelector('.men-pic')
 
