@@ -1,0 +1,228 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+
+::-webkit-scrollbar{
+    display: none;
+}
+}
+
+
+.navigation-bar{
+    width: 100%;
+    border-bottom: 1px solid black;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+}
+
+.logo-div{
+    display: flex;
+    align-items: center;
+    padding: 3px;
+}
+
+.logo-div img{
+    width: 140px;
+    object-fit: contain;
+}
+.workout-div{
+    display: flex;
+   
+    padding: 4px;
+    text-decoration: none;
+    list-style-type: none;
+    align-items: center;
+}
+.workout-div span{
+    margin-right: 34px;
+    font-size: 1.1rem;
+    padding: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    list-style: none;
+   
+}
+.work{
+    text-decoration: none;
+    list-style-type: none;
+}
+.workout-div a {
+    text-decoration: none;
+    list-style-type: none;
+    color: black;
+}
+.workout-div span.selected{
+    background:rgb(59 130 246 / 0.5);
+    padding: 4px;
+    border-radius: 6px;
+}
+.workout-div span:hover{
+    background:rgb(59 130 246 / 0.5);
+    border-radius: 6px;
+    transition: 200ms ease-in-out;
+}
+
+::placeholder{
+    font-size: 15px;
+}
+
+.containner{
+    display: flex;
+    margin-top: 1.5rem;
+    width: 100%;
+    border-bottom: 1px solid rgb(226, 223, 223);
+    padding: 20px;
+    align-items: center;
+    flex-direction: column;
+   
+}
+.Main-heading-div{
+    width: 100%;
+    
+    padding: 12px;
+}
+
+.Main-heading-div h4{
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+    color: #204099;;
+}
+
+.message-section{
+    margin-top: 6px;
+    
+    padding: 12px;
+    min-width: 100%;
+    font-size: 0.96rem;
+}
+
+.second-containner{
+    margin-top: 2rem;
+    width: 100%;
+   
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cont{
+    width: 200px;
+  
+    height: 200px;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.cont input{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.form-div{
+    display: flex;
+    flex-direction: column;
+    width: 420px;
+    border:1px solid black;
+    border-radius: 5px;
+    padding: 4px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.frst-row{
+    display: flex;
+    flex-direction: column;
+    padding: 7px;
+   
+
+}
+.frst-row select{
+    margin-top: 9px;
+    padding: 4px;
+}
+.frst-row input{
+    padding: 4px;
+    margin-top: 9px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.custom-control{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+}
+.custom-control label{
+    font-size: 0.9rem;
+}
+::placeholder{
+    font-size: 0.8rem;
+}
+.last-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.calculate{
+    width: 40%;
+    margin-top: 7px;
+    padding: 7px;
+    border-radius: 6px;
+    border: none;
+    color: white;
+    background: #000;
+}
+
+.calculate:hover{
+   opacity: 0.8;
+}
+
+.message{
+    margin-top: 20px;
+    border:1px solid #204099;
+    padding: 6px;
+    display: none;
+}
+
+@media (max-width : 500px){
+    .workout-div span{
+        font-size: 0.7rem;
+        margin-right: 7px;
+    }
+}
+
+
+@media (max-width : 430px){
+    .second-containner{
+        min-width: 100%;
+        padding: 2px;
+    }
+    .form-div{
+        display: flex;
+        flex-direction: column;
+       width: 310px;
+    }
+    .message-section{
+        margin-top: 2px;
+    }
+}
+
+
+@media (max-width : 301px){
+    .workout-div {
+        display: none;
+    }
+}
